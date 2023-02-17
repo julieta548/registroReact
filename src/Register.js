@@ -44,7 +44,7 @@ export const Register = () => {
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/user")
+    fetch("https://heartfelt-starship-f7154b.netlify.app/user")
       .then((response) => response.json())
       .then((data) => setRecords(data))
       .catch((error) => console.error(error));
