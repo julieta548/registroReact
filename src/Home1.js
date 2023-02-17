@@ -26,7 +26,7 @@ export const Register = () => {
     ///console.log(regobj);
 
     if (isValidate()) {
-      fetch("http://localhost:8000/user", {
+      fetch("https://heartfelt-starship-f7154b.netlify.app/user", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(regobj),
