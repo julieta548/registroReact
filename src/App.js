@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './Home';
-import { Register } from './Register';
+import { Register } from './Home1';
 
 function App() {
   return (
@@ -11,9 +10,9 @@ function App() {
     
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/' element={<Register/>}></Route>
         {/* <Route path='/login' element={<Login/>}></Route> */}
-        <Route path='https://heartfelt-starship-f7154b.netlify.app/register' element={<Register/>}></Route>
+        
 
       </Routes>
       
