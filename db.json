@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "username": "Julieta Sosa",
+      "email": "julietasosa548@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "Nombre Apellido",
+      "email": "correo@mail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "OtroNombre OtroApellido",
+      "email": "email@gmail.com",
+      "password": "456789",
+      "id": 3
+    }
+  ]
+}
