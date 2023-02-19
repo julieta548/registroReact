@@ -6,6 +6,9 @@ export const Register = () => {
   const [password, passwordchange] = useState("");
   const [username, usernamechange] = useState("");
 
+
+  
+
   const isValidate = () => {
     let isProceed = true;
     if (username === null || username === "") {
@@ -26,7 +29,7 @@ export const Register = () => {
     ///console.log(regobj);
 
     if (isValidate()) {
-      fetch("https://heartfelt-starship-f7154b.netlify.app/user", {
+      fetch("http://localhost:8000/user", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(regobj),
@@ -44,7 +47,7 @@ export const Register = () => {
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
-    fetch("https://heartfelt-starship-f7154b.netlify.app/user")
+    fetch("http://localhost:8000/user")
       .then((response) => response.json())
       .then((data) => setRecords(data))
       .catch((error) => console.error(error));
